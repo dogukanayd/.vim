@@ -26,4 +26,21 @@ so ~/.vim/vimrc.vim
 |leader space|:nohlsearch|highlight removal|
 |ctrl+f|:echo expand("%:p")|print the full path|
 |cmd+1|:NERDTreeToggle|toggle the NERDTree|
+|ctrl+6| |go to the latest location|
+|Ag 'search keyword'| | search a keyword|
+|bufdo bd!| |close every buffer|
 
+## How to?
+### How to find and replace in all files?
+1. :Gsearch
+2. select all of the lines you want to change
+3. :s/{keyword}/{keyword}
+4. :Greplace
+5. press `a` to accept all of the replacements
+6. :wa to save all of the changes
+
+
+## Brew packages
+```sh
+brew install the_silver_searcher
+```

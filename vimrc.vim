@@ -33,7 +33,7 @@ so ~/.vim/ctrlp.vim
 so ~/.vim/nerdtree.vim
 so ~/.vim/todo.vim
 so ~/.vim/vim-go.vim
-
+so ~/.vim/greplace.vim
 
 " -----Auto-Commands-----"
 "Automatically source the Vimrc file on save

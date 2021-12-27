@@ -1,9 +1,9 @@
 " -----Visuals-----"
 set number						"Let's activate the line numbers.
-set linespace=5					"Macvim-specific line height.
+set linespace=1						"Macvim-specific line height.
 set guioptions-=e					"We don't want Gui tabs
-set nowrap
-set colorcolumn=120
+set nowrap						"We don't want text wrapping
+set colorcolumn=120					"Set a ruler to 120 characters limit
 
 syntax enable
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -33,8 +33,11 @@ endfunction
 call ChangeBackground()
 
 set t_CO=256									"Use 256 colors. This is  useful for Terminal Vim.
-set guifont=Operator_Mono_Medium_Nerd_Font_Complete:h16				"Set the font with height
+set guifont=Operator_Mono_Medium_Nerd_Font_Complete:h13				"Set the font with height
 set guioptions-=l								"Will hide the scrollbar
 set guioptions-=L								"Will hide the scrollbar
 set guioptions-=r								"Will hide the scrollbar
 set guioptions-=R								"Will hide the scrollbar
+
+"Get rid of ugly split border
+hi vertsplit guifg=bg guibg=bg							

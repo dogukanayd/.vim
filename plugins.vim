@@ -18,6 +18,8 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'tpope/vim-commentary'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sakshamgupta05/vim-todo-highlight'
+Plugin 'rking/ag.vim'
+Plugin 'skwp/greplace.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
