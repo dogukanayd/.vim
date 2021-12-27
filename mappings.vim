@@ -30,8 +30,9 @@ nmap <silent> rn <Plug>(coc-rename)
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
-
 nmap <Leader>gf :GoFmt<cr>
+nmap <Leader>gd :GoDef<cr>
+nmap <Leader>gt :GoAddTags<cr>
 
 " Print full path
 map <C-f> :echo expand("%:p")<cr>
