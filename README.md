@@ -23,6 +23,7 @@ so ~/.vim/vimrc.vim
 |leader gf|:GoFmt|fix the styling of the Go files|
 |leader gd|:GoDef|go to the def with vim-go|
 |leader gt|:GoAddTags|add json tags to the struct|
+|leader gl|:GoMetaLinter|run all of the linters|
 |leader space|:nohlsearch|highlight removal|
 |ctrl+f|:echo expand("%:p")|print the full path|
 |cmd+1|:NERDTreeToggle|toggle the NERDTree|

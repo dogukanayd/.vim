@@ -33,6 +33,7 @@ autocmd FileType go nmap <leader>t  <Plug>(go-test)
 nmap <Leader>gf :GoFmt<cr>
 nmap <Leader>gd :GoDef<cr>
 nmap <Leader>gt :GoAddTags<cr>
+nmap <Leader>gl :GoMetaLinter<cr>
 
 " Print full path
 map <C-f> :echo expand("%:p")<cr>
