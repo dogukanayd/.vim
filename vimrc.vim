@@ -2,7 +2,7 @@ set nocompatible              				"We want the latest Vim settings/options.
 
 so ~/.vim/plugins.vim
 
-set noerrorbells             				"No beeps
+set noerrorbells visualbell t_vb=             		"No beeps
 set backspace=indent,eol,start				"Make backspace behave like every other editor.
 let mapleader = ','					"The default leader is \, but comma is much better.
 set linespace=5						"Macvim-specific line-height.
@@ -14,6 +14,7 @@ set smartcase                				" ... but not it begins with upper case
 set nocursorcolumn           				"speed up syntax highlighting
 set nocursorline
 set encoding=UTF-8
+set tabstop=4
 
 "Visuals
 so ~/.vim/visualsettings.vim
@@ -34,6 +35,8 @@ so ~/.vim/nerdtree.vim
 so ~/.vim/todo.vim
 so ~/.vim/vim-go.vim
 so ~/.vim/greplace.vim
+so ~/.vim/snipmate.vim
+so ~/.vim/vimphpnamspace.vim
 
 " -----Auto-Commands-----"
 "Automatically source the Vimrc file on save

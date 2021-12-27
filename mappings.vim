@@ -1,7 +1,9 @@
 " -----Mappings-----"
 "Make it east to edit the Vimrc file
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
-nmap <Leader>ep :tabedit /Users/dogukanaydogdu/.vim/plugins.vim<cr>
+nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
+nmap <Leader>es :e ~/.vim/snippets/
+nmap <Leader>vdoc :e ~/.vim/README.md<cr>
 
 "Add simple highlight removal.
 nmap <Leader><space> :nohlsearch<cr>
@@ -37,3 +39,10 @@ nmap <Leader>gl :GoMetaLinter<cr>
 
 " Print full path
 map <C-f> :echo expand("%:p")<cr>
+
+
+
+"----- Laravel Specific -----"
+nmap <Leader>lm :!php artisan make:
+nmap <Leader>lfc :CtrlP<cr>app/Http/Controllers/
+nmap <Leader>lfs :e<cr>app/Services/

@@ -1,0 +1,25 @@
+snippet err
+	if err != nil {
+		${1}
+	}
+
+snippet ts
+	type ${1} struct {
+		${2}
+	}
+
+snippet ti
+	type {$1} interface {
+		${2}
+	}
+	
+
+snippet gr
+	go func() {
+		${1}
+	}()
+
+snippet select
+	select {
+		case ${1}:
+	}	
