@@ -17,10 +17,10 @@ so ~/.vim/vimrc.vim
 
 | key strokes   |      command      |  details |
 |----------|:-------------:|------:|
-| leader gi |coc-implementation | will go to the implementation of function|
-| leader rn |coc-rename|rename the selected|
-| leader gr |coc-references|will go to the reference |
-| leader gf|:GoFmt|fix the styling of the Go files|
+|leader gi|coc-implementation |go to the implementation of function|
+|leader rn|coc-rename|rename the selected|
+|leader gr|coc-references|go to the reference |
+|leader gf|:GoFmt|fix the styling of the Go files|
 |leader gd|:GoDef|go to the def with vim-go|
 |leader gt|:GoAddTags|add json tags to the struct|
 |leader space|:nohlsearch|highlight removal|
