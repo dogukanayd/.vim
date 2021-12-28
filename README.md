@@ -14,16 +14,22 @@ so ~/.vim/vimrc.vim
 ```
 
 ## Mappings
-
-| key strokes   |      command      |  details |
-|----------|:-------------:|------:|
-|leader gi|coc-implementation |go to the implementation of function|
+### Go
+|key strokes|command|details|
+|----------|:----------:|----------:|
 |leader rn|coc-rename|rename the selected|
 |leader gr|coc-references|go to the reference |
 |leader gf|:GoFmt|fix the styling of the Go files|
 |leader gd|:GoDef|go to the def with vim-go|
-|leader gt|:GoAddTags|add json tags to the struct|
+|leader gat|:GoAddTags|add json tags to the struct|
 |leader gl|:GoMetaLinter|run all of the linters|
+|leader gt|:GoAlternate|go the the test file|
+|cmd+ctrl+r|:GoTestFunc|run the test function|
+
+### Vim
+| key strokes   |      command      |  details |
+|----------|:-------------:|------:|
+|leader gi|coc-implementation |go to the implementation of function|
 |leader space|:nohlsearch|highlight removal|
 |leader vdoc| |open the readme file|
 |ctrl+f|:echo expand("%:p")|print the full path|
@@ -32,6 +38,13 @@ so ~/.vim/vimrc.vim
 |Ag 'search keyword'| | search a keyword|
 |bufdo bd!| |close every buffer|
 |ctags -R|ctags -R|create ctags for the folder|
+
+### Php
+| key strokes   |      command      |  details |
+|----------|:-------------:|------:|
+|leader lm|php artisan make| |
+|leader lfc| | open the controller folder|
+|leader lfs| | open the services folder|
 
 ## How to?
 ### How to find and replace in all files?
@@ -57,10 +70,11 @@ brew install ctags
 ```
 
 ## COC packages
-:CocCommand markdown-preview-enhanced.openPreview
 
 ```sh
 :CocInstall coc-markdown-preview-enhanced
 :CocInstall coc-go
 :CocInstall coc-webview
 ```
+
+## Notes

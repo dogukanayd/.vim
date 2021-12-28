@@ -23,3 +23,32 @@ snippet select
 	select {
 		case ${1}:
 	}	
+
+snippet echoapp
+		err := godotenv.Load()
+
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		e := echo.New()
+		e.Use(middleware.Recover())
+		e.Use(middleware.CORS())
+
+		e.GET("/health", func (c echo.Context) error {
+			return c.JSON(http.StatusOK, map[string]bool{
+				"status": true,
+			})
+		})
+
+		v1 := e.Group("/v1")
+		{
+			
+		}
+
+		e.Debug = os.Getenv("MODE") == "debug"
+
+		if err := e.Start(fmt.Sprintf(":%s", os.Getenv("PORT"))); err != nil {
+			log.Fatal(err)
+		}	
+		

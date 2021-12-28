@@ -31,11 +31,13 @@ nmap <silent> rn <Plug>(coc-rename)
 "Ex: `\b` for building, `\r` for running and `\b` for running test.
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
-autocmd FileType go nmap <leader>t  <Plug>(go-test)
-nmap <Leader>gf :GoFmt<cr>
-nmap <Leader>gd :GoDef<cr>
-nmap <Leader>gt :GoAddTags<cr>
-nmap <Leader>gl :GoMetaLinter<cr>
+autocmd FileType go nmap <leader>rt  <Plug>(go-test)
+autocmd FileType go nmap <Leader>gf :GoFmt<cr>
+autocmd FileType go nmap <Leader>gd :GoDef<cr>
+autocmd FileType go nmap <Leader>gat :GoAddTags<cr>
+autocmd FileType go nmap <Leader>gl :GoMetaLinter<cr>
+autocmd FileType go nmap <Leader>gt :GoAlternate<cr>
+autocmd FileType go nmap <D-C-R> :GoTestFunc<cr>
 
 " Print full path
 map <C-f> :echo expand("%:p")<cr>
@@ -43,6 +45,6 @@ map <C-f> :echo expand("%:p")<cr>
 
 
 "----- Laravel Specific -----"
-nmap <Leader>lm :!php artisan make:
-nmap <Leader>lfc :CtrlP<cr>app/Http/Controllers/
-nmap <Leader>lfs :e<cr>app/Services/
+autocmd FileType php nmap <Leader>lm :!php artisan make:
+autocmd FileType php nmap <Leader>lfc :CtrlP<cr>app/Http/Controllers/
+autocmd FileType php nmap <Leader>lfs :e<cr>app/Services/
