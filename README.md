@@ -50,6 +50,7 @@ Open vim and;
 |leader lm|php artisan make| |
 |leader lfc| | open the controller folder|
 |leader lfs| | open the services folder|
+|leader n|:call IPhpInsertUse|import classes|
 
 ## How to?
 ### How to find and replace in all files?

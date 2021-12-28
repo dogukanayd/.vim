@@ -15,6 +15,8 @@ set nocursorcolumn           				"speed up syntax highlighting
 set nocursorline
 set encoding=UTF-8
 set tabstop=4
+set autowriteall 							"Automatically write the file when switching buffers.
+set complete=.,w,b,u                        "Set our desired autocomplation mathing.
 
 "Visuals
 so ~/.vim/visualsettings.vim
