@@ -48,3 +48,4 @@ map <C-f> :echo expand("%:p")<cr>
 autocmd FileType php nmap <Leader>lm :!php artisan make:
 autocmd FileType php nmap <Leader>lfc :CtrlP<cr>app/Http/Controllers/
 autocmd FileType php nmap <Leader>lfs :e<cr>app/Services/
+autocmd FileType php nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<cr>

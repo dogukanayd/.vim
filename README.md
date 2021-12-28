@@ -51,6 +51,7 @@ Open vim and;
 |leader lfc| | open the controller folder|
 |leader lfs| | open the services folder|
 |leader n|:call IPhpInsertUse|import classes|
+|leader pf|:call PhpCsFixerFixFile()|fix the file by psr2|
 
 ## How to?
 ### How to find and replace in all files?
@@ -73,6 +74,7 @@ Select the text block that you want to sort and type :sort
 ```sh
 brew install the_silver_searcher
 brew install ctags
+brew install php-cs-fixer
 ```
 
 ## COC packages

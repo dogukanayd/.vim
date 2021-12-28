@@ -39,6 +39,7 @@ so ~/.vim/vim-go.vim
 so ~/.vim/greplace.vim
 so ~/.vim/snipmate.vim
 so ~/.vim/vimphpnamspace.vim
+so ~/.vim/phpcsfixer.vim
 
 " -----Auto-Commands-----"
 "Automatically source the Vimrc file on save
