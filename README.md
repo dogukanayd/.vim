@@ -13,6 +13,11 @@ vim .vimrc
 so ~/.vim/vimrc.vim
 ```
 
+Open vim and;
+```sh
+:GoInstallBinaries
+```
+
 ## Mappings
 ### Go
 |key strokes|command|details|
