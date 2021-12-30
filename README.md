@@ -43,7 +43,7 @@ Open vim and;
 |Ag 'search keyword'| | search a keyword|
 |bufdo bd!| |close every buffer|
 |ctags -R|ctags -R|create ctags for the folder|
-
+|leader gcc| |comment the selected lines|
 ### Php
 | key strokes   |      command      |  details |
 |----------|:-------------:|------:|
